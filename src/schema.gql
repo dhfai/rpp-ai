@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Rpp {
+  id: Int!
+  sessionId: String!
+  title: String!
+  content: String!
+}
+
+type Query {
+  getAllrpp: [Rpp!]!
+}
+
+type Mutation {
+  generateRpp(input: CreateRppDto!): Rpp!
+  endrppSession(sessionId: String!): String!
+}
+
+input CreateRppDto {
+  title: String!
+}
